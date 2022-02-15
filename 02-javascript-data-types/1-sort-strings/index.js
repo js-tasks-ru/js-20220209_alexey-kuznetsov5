@@ -12,7 +12,7 @@ export function sortStrings(arr, param = 'asc') {
 
 return [...arr].sort(function (a,b) {
 
-    return params[param] * a.localeCompare(b, 'default', { caseFirst: 'upper' });
+    return params[param] * a.localeCompare(b, ['ru', 'en'], { caseFirst: 'upper' });
   });
 
 }
